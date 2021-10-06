@@ -1,12 +1,11 @@
 function linearSearch(array = [], searchedElement = -1) {
-  let response
-  response = -1
+  let i
 
-  array.forEach((element, index) => {
-    if (element === searchedElement) response = index
-  })
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === searchedElement) return i
+  }
 
-  return response
+  return -1
 }
 
 ;(() => {

@@ -1,12 +1,14 @@
 function linearSearch(array = [], searchedElement = -1) {
-  let response
-  response = -1
+  let last, i
+  const MAX = array.length - 1
 
-  array.forEach((element, index) => {
-    if (element === searchedElement) response = index
-  })
+  last = array[MAX]
+  array[MAX] = searchedElement
+  i = 0
 
-  return response
+  while (array[i] !== searchedElement) i++
+
+  return i < MAX ? i : last === searchedElement ? i : -1
 }
 
 ;(() => {
