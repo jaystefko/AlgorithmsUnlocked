@@ -1,8 +1,3 @@
-// this function will work properly ONLY if searchedElement
-// will have some basic type
-// I am ommiting all type checking process to purely focus
-// on algorithms
-// -1 will be default error return
 function linearSearch(array = [], searchedElement = -1) {
   let response
   response = -1
