@@ -1,6 +1,6 @@
 function binarySearch(array = [], searchedElement = -1) {
   let left, right, middle
-  left = 1
+  left = 0
   right = array.length - 1
 
   while (left <= right) {
