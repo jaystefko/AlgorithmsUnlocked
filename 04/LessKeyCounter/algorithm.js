@@ -14,9 +14,9 @@ function equalKeyCounter(array = [], max = -1) {
 function lessKeyCounter(equalKeyArray = [], max = -1) {
   let response, i
   response = new Array(max)
-  response[0] = equalKeyArray[0]
+  response[0] = 0
 
-  for (i = 1; i < max; i++) response[i] = equalKeyArray[i] + response[i - 1]
+  for (i = 1; i < max; i++) response[i] = equalKeyArray[i - 1] + response[i - 1]
 
   return response
 }
